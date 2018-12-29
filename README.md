@@ -54,7 +54,7 @@ api需要两个参数，分别通过下面的`data-list`和`data-index`来传到
 
 wxml代码：
 
-```
+``` javascript
 <view class='picList'>
 <!-- {{urlApiitem}} -->
   <image mode="aspectFill"
@@ -71,7 +71,7 @@ wxml代码：
 
 js代码：
 
-```
+``` javascript
   //图片点击事件
   clickImg(e){
     const index = e.currentTarget.dataset.index;//获取data-index
