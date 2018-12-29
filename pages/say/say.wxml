@@ -1,0 +1,16 @@
+<!--pages/say/say.wxml-->
+<view class='container'>
+  <textarea value="{{content}}" bindinput='changeContent' placeholder='说说你今天的心情...'></textarea>
+  <button bindtap='chooseImg' type="">点击上传图片</button>
+  <view class='boxImg'>
+    <image 
+      mode="aspectFill" 
+      wx:for="{{picArr}}" 
+      wx:key="index"
+      bindtap="clickImg"
+      data-list="{{picArr}}"
+      data-index="{{index}}"
+      src='{{item}}'></image>
+  </view>
+  <button bindtap='submit' type="primary">发布</button>
+</view>

@@ -1,45 +1,19 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/news/news",
-    "pages/video/video"
+    "pages/say/say"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#faa916",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "#fff"
-  },
-  "tabBar": {
-    "color": "#333",
-    "backgroundColor":"#eee",
-    "postion":"top",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath":"/images/home1.png",
-        "selectedIconPath":"/images/home2.png"
-      },
-      {
-        "pagePath": "pages/news/news",
-        "text": "新闻",
-        "iconPath": "/images/news1.png",
-        "selectedIconPath": "/images/news2.png"
-      },
-      {
-        "pagePath": "pages/video/video",
-        "text": "视频",
-        "iconPath": "/images/video1.png",
-        "selectedIconPath": "/images/video2.png"
-      }
-    ]
+    "navigationBarBackgroundColor": "#f66121",
+    "navigationBarTitleText": "心情说说",
+    "navigationBarTextStyle": "#555"
   },
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true,
+  "debug": false,
   "navigateToMiniProgramAppIdList": [
     "wxe5f52902cf4de896"
   ]

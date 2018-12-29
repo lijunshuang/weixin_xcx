@@ -1,21 +1,12 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+button{overflow:inherit}
+.container{width: 90%;margin:30rpx auto}
+.btn{width:100%;margin:30rpx 0px;font-size: 16px;}
+.list{display: flex;border-bottom:1px solid #ddd;padding:20rpx 0px;}
+.list .left{width:90rpx;text-align: center;margin-right: 10rpx;}
+.list .left .avatar{width:80rpx;height:80rpx;border-radius: 50%;}
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
+.list .right{flex: 1;font-size:14px;}
+.list .name{color:orange;font-size:14px;}
+.list .right .info{padding:10rpx 0px 20rpx;}
+.list .right .picList{display: flex;flex-flow:row wrap}
+.list .right image{width:180rpx;height:200rpx;margin:0 10rpx 10rpx 0;}

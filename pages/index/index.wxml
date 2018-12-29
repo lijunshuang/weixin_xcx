@@ -1,4 +1,36 @@
 <!--index.wxml-->
 <view class="container">
-  我是首页
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  </view>
+  <button class='btn' bindtap="toSay">发布心情</button>
+  {{list.avatarUrl}}
+  <view class='picBox'>
+    <view class='list' wx:for="{{result}}" wx:for-item="list" wx:key="index">
+      <view class='left'>
+        <image class='avatar' src='{{list.avatarUrl}}'></image>
+        <view class='name'>{{list.nickName}}</view>
+      </view>
+      <view class='right'>
+        <view class='info'>{{list.content}}</view>
+        <view class='picList'>
+        <!-- {{urlApiitem}} -->
+          <image mode="aspectFill"
+            wx:for="{{list.serverPics}}"
+            wx:for-item="item"
+            wx:key="id" 
+            bindtap="clickImg"
+            data-list="{{list.serverPics}}"
+            data-index="{{index}}"
+            src="{{urlApi}}/{{item}}">
+          </image>
+        </view>
+        <view class='time'>{{list.time}}</view>
+      </view>
+    </view>
+  </view>
 </view>
